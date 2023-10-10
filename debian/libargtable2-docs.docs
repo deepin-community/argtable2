@@ -1,0 +1,4 @@
+debian/tmp/usr/share/doc/argtable2/*.html
+debian/tmp/usr/share/doc/argtable2/*.gif
+debian/tmp/usr/share/doc/argtable2/*.ps
+debian/tmp/usr/share/doc/argtable2/*.pdf

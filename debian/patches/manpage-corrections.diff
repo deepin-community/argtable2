@@ -1,0 +1,28 @@
+Author: Shachar Shemesh <shachar@debian.org>
+Subject: Fix minus escaping in man page
+Forwarded: Email to maintainer
+--- a/doc/argtable2.3.in
++++ b/doc/argtable2.3.in
+@@ -75,7 +75,7 @@
+ They are provided for convenience when defining command line options
+ that have either zero\-or\-one occurrences (mincount=0,maxcount=1) or exactly one occurrence (mincount=1,maxcount=1) respectively.
+ .PP
+-The shortopts="f" parameter defines the option's short form tag (eg -f).
++The shortopts="f" parameter defines the option's short form tag (eg \-f).
+ Multiple alternative tags may be defined by concatenating
+ them (eg shortopts="abc" defines options \-a, \-b and \-c as equivalent).
+ Specify shortopts=NULL when no short option is required.
+@@ -144,10 +144,10 @@
+ for which no command line argument is received.
+ .PP
+ Hint: \fIUntagged\fP numeric arguments are not recommended because GNU getopt mistakes
+-negative values (eg -123) for tagged options (eg -1 -2 -3).
+-\fITagged\fP arguments (eg -x -123, --tag=-123) do not suffer this problem.
++negative values (eg \-123) for tagged options (eg \-1 \-2 \-3).
++\fITagged\fP arguments (eg \-x \-123, \-\-tag=\-123) do not suffer this problem.
+ .SS "REAL/DOUBLE COMMAND LINE OPTIONS"
+-\-x2.234, \-y 7e\-03, \-z\-3.3E+6, \-\-pi=3.1415, \-\-tolerance 1.0E-6
++\-x2.234, \-y 7e\-03, \-z\-3.3E+6, \-\-pi=3.1415, \-\-tolerance 1.0E\-6
+ .PP
+ .nf
+ struct \fBarg_dbl\fP

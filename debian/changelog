@@ -1,5 +1,109 @@
-template-repository (1.0-1) unstable; urgency=medium
+argtable2 (13-1.1) unstable; urgency=medium
 
-  * Initial release
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Holger Levsen <holger@debian.org>  Fri, 01 Jan 2021 17:15:04 +0100
+
+argtable2 (13-1) unstable; urgency=medium
+
+  * New upstream version
+  * Add hardening flags to build
+  * Fix "FTBFS: dpkg-buildpackage: error: dpkg-source -b argtable2-12
+    gave error exit status 2" bug irrelevant after package update
+    (Closes: #643048)
+  * Fix "FTBFS when built with dpkg-buildpackage -A (No such file or
+    directory)" debian/rules changed to only use dh (Closes: #805995)
+  * Update the copyright file to machine readable format
+  * Update policy to 3.9.8.0
+
+ -- Shachar Shemesh <shachar@debian.org>  Sat, 16 Jul 2016 20:45:15 +0300
+
+argtable2 (12-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Use dh-autoreconf in build to support new architectures (Closes: #727322)
+
+ -- Chen Baozi <baozich@gmail.com>  Tue, 03 Jun 2014 14:48:59 +0800
+
+argtable2 (12-1) unstable; urgency=low
+
+  * New upstream version
+  * Upgraded the Debian policy to 3.9.1.0 
+  * Change the debhelper compatibility level to V8
+  * Various Lintian cleanups
+  * Reduce debian/rules to rely on debhelper more (Closes: #488585)
+
+ -- Shachar Shemesh <shachar@debian.org>  Sun, 22 Aug 2010 16:33:24 +0300
+
+argtable2 (9-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Shachar Shemesh <shachar@debian.org>  Wed, 07 May 2008 19:54:52 +0000
+
+argtable2 (7-2) unstable; urgency=low
+
+  * argtable2 - FTBFS: No rule to make target `distclean&#39;.  Stop.
+    (Closes: #451899)
+
+ -- Shachar Shemesh <shachar@debian.org>  Mon, 19 Nov 2007 13:00:52 +0200
+
+argtable2 (7-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Shachar Shemesh <shachar@debian.org>  Sun, 18 Nov 2007 09:39:23 +0200
+
+argtable2 (6-3) unstable; urgency=low
+
+  * Update maintainer's email address (now a Debian Developer)
+  * Update the policy version to 3.7.2 (no changes required)
+
+ -- Shachar Shemesh <shachar@debian.org>  Sun, 18 Nov 2007 09:38:40 +0200
+
+argtable2 (6-2) unstable; urgency=low
+
+  * Update the FSF address.
+  * Move the tared examples to /usr/share/doc/libardtable2-dev
+  * Remove no longer needed delete of upstream erronous binary file
+  * Fix hyphens as minuses in man page
+
+ -- Shachar Shemesh <debianpkg@shemesh.biz>  Sun, 12 Mar 2006 11:08:34 +0000
+
+argtable2 (6-1) unstable; urgency=low
+
+  * New upstream version
+  * Change the watch file to read directly from sourceforge (requires uscan
+    protocol version 3)
+
+ -- Shachar Shemesh <debianpkg@shemesh.biz>  Sun, 12 Feb 2006 10:47:04 +0000
+
+argtable2 (5-1) unstable; urgency=low
+
+  * New upstream version
+  * Upstream moved to standard versioning and libtool.
+  * Implement
+    http://lists.debian.org/debian-devel-announce/2005/11/msg00016.html
+
+ -- Shachar Shemesh <debianpkg@shemesh.biz>  Sat, 11 Feb 2006 22:08:29 +0000
+
+argtable2 (2.4-2) unstable; urgency=low
+
+  * Fix a memory overwrite if too many errors happen (patch from upstream)
+  * Update Debian policy version to 3.6.2
+
+ -- Shachar Shemesh <debianpkg@shemesh.biz>  Wed,  7 Sep 2005 12:28:43 +0300
+
+argtable2 (2.4-1) unstable; urgency=low
+
+  * Initial Release. (closes: #306755)
+  * Added an SONAME to the library
+  * Changed name from libargtable2.so.x (where x is the version, x=4 for 2.4)
+    to libargtable2.so.0. This was done to make sure things don't break as a
+    result of the addition of SONAME to the library, and with some
+    coordination with upstream (who does not want to add SONAME there at this
+    point).
+
+ -- Shachar Shemesh <debianpkg@shemesh.biz>  Sun, 29 May 2005 12:07:07 +0300
+
